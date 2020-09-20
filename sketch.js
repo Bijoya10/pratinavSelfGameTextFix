@@ -41,6 +41,11 @@ function draw() {
     background("black");
     game.play();
   }
+  if(gameState==="won"){
+    clear();
+    background("black");
+    game.won();
+  }
   if(gameState==="end"){
     game.end();
   }
